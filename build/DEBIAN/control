@@ -1,0 +1,9 @@
+Package: spark-uengine-apk-builder
+Version: 1.0.0
+Maintainer: gfdgd xi <3025613752@qq.com>
+Homepage: https://gitee.com/gfdgd-xi/uengine-apk-builder
+Architecture: all
+Priority: optional
+Depends: python3, python3-tk, python3-pip, aapt
+Description: gfdgd xi make's uengine apk builder
+

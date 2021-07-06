@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=System;
+Comment=uengine（anbox） 运行器
+Encoding=UTF-8
+Exec=/usr/bin/uengine-apk-builder
+Icon=/opt/apps/uengine-apk-builder/icon.png
+MimeType=
+Name=uengine APK 打包器
+StartupWMClass=uengine APK 打包器
+Terminal=false
+Type=Application
+X-Deepin-Vendor=user-custom
