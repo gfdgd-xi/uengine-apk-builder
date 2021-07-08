@@ -353,13 +353,11 @@ def GetApkIconInApk(apkFilePath):
     info = GetApkInformation(apkFilePath)
     for line in info.split('\n'):
         if "application:" in line:
-            line = line + " "
-            if "banner='" in line:
-                line = line.replace(line[line.index("banner='"): -1], "")
             line = line[line.index("icon='"): -1]
             line = line.replace("icon='", "")
-            line = line.replace("'", "")
-            line = line.replace(" ", "")
+            if "'" in line:
+                line = line[0: line.index("'")]
+            return line
             return line
 
 def SaveApkIcon(apkFilePath, iconSavePath):
