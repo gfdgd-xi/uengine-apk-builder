@@ -400,7 +400,7 @@ def ShowUseProgram():
 # 程序信息
 ###########################
 programUrl = "https://gitee.com/gfdgd-xi/uengine-runner"
-version = "1.0.0"
+version = "1.0.0beta1"
 goodRunSystem = "Linux(deepin/UOS)"
 about = '''一个基于 Python3 的 tkinter 制作的 uengine APK 应用打包器
 版本：{}

@@ -165,7 +165,7 @@ Name={}
     write_txt("{}/DEBIAN/postinst".format(tempPath), debPostinst)
     RunCommandShow("echo 正在写入文件：'{}/DEBIAN/prerm'".format(tempPath))
     write_txt("{}/DEBIAN/prerm".format(tempPath), debPrerm)
-    RunCommandShow("echo 正在写入文件：'{}/usr/share/applications/{}.desktop'".format(tempPath, apkPackageName))
+    RunCommandShow("echo 正在写入文件：'/usr/share/applications/{}.desktop'".format(apkPackageName))
     #write_txt("{}/usr/share/applications/{}.desktop".format(tempPath, apkPackageName), desktopFile)
     BuildUengineDesktop(apkPackageName, apkActivityName, apkChineseLabel, iconSavePath,
                         "{}/usr/share/applications/{}.desktop".format(tempPath, apkPackageName))
@@ -400,7 +400,7 @@ def ShowUseProgram():
 # 程序信息
 ###########################
 programUrl = "https://gitee.com/gfdgd-xi/uengine-runner"
-version = "1.0.0"
+version = "1.0.0beta1"
 goodRunSystem = "Linux(deepin/UOS)"
 about = '''一个基于 Python3 的 tkinter 制作的 uengine APK 应用打包器
 版本：{}
