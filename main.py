@@ -165,7 +165,7 @@ Name={}
     write_txt("{}/DEBIAN/postinst".format(tempPath), debPostinst)
     RunCommandShow("echo 正在写入文件：'{}/DEBIAN/prerm'".format(tempPath))
     write_txt("{}/DEBIAN/prerm".format(tempPath), debPrerm)
-    RunCommandShow("echo 正在写入文件：'{}/usr/share/applications/{}.desktop'".format(tempPath, apkPackageName))
+    RunCommandShow("echo 正在写入文件：'/usr/share/applications/{}.desktop'".format(apkPackageName))
     #write_txt("{}/usr/share/applications/{}.desktop".format(tempPath, apkPackageName), desktopFile)
     BuildUengineDesktop(apkPackageName, apkActivityName, apkChineseLabel, iconSavePath,
                         "{}/usr/share/applications/{}.desktop".format(tempPath, apkPackageName))
