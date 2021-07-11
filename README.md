@@ -1,3 +1,5 @@
+# 我写废了,继续深造去了,可以使用其他替代品,链接:https://bbs.deepin.org/zh/post/222874
+
 # uengine APK 打包器 1.0.0
 
 #### 介绍
